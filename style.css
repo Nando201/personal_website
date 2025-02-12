@@ -1,0 +1,58 @@
+/* jetbrains-mono-latin-wght-normal */
+@font-face {
+    font-family: 'JetBrains Mono Variable';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100 800;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/jetbrains-mono:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono Variable';
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1{ font-size: 3.6rem; }
+h2{ font-size: 2.4rem; }
+p, a{ font-size: 1.6rem;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+header{
+    width: 100%;
+    background-color: #FFF2F2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.logo{
+    font-size: 2.4rem;
+    color: black;
+}
+
+.navbar__list{
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 10px;
+}
+
+.navbar__list a{
+    color: black;
+}
+
+.navbar__list .first_item{
+    color: blueviolet !important;
+}
+
+main{
+    display: none;
+}
