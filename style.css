@@ -1,3 +1,8 @@
+:root{
+    --primary-color: #333646;
+    --secundary-color: #252734;
+}
+
 /* jetbrains-mono-latin-wght-normal */
 @font-face {
     font-family: 'JetBrains Mono Variable';
@@ -22,15 +27,16 @@ html{
 
 h1{ font-size: 3.6rem; }
 h2{ font-size: 2.4rem; }
-p, a{ font-size: 1.6rem;}
+h3{ font-size: 2rem; }
+p, a{ font-size: 1.6rem; font-weight: 200; color: white;}
 li{list-style: none;}
-a{text-decoration: none;}
+a{text-decoration: none; color: white;}
 
 
 header{
     font-weight: bold;
     width: 100%;
-    background-color: #333646;
+    background-color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,75 +78,92 @@ header{
 
 #home{
     height: 90vh;
-    padding: 10px 20px;
-    background-color: #333646;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
     display: flex;
-    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    color: white;
 }
 
-.wrapper{
-    width: 60%;
-    padding: 0px 10px;
+
+.container__home{
+    display: flex;
+    justify-content: center;
+    max-width: 60%;
 }
 
-.wrapper__title{
-    color: #FFAF2A;
-    margin-bottom: 15px;
+.container__home .wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+    padding: 1rem 2rem;
 }
 
-.image-container{
-    padding: 0px 20px;
+.wrapper h1{
+    color: rgb(230, 198, 16);
 }
-
 
 #projects{
-    padding: 20px 10px;
+    background-color: var(--secundary-color);
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #252734;
+    padding: 1rem 2rem;
 }
+
 
 #projects .container{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
-    padding: 10px 20px;
-    border-radius: 10px;
-    width: 80%;
-    margin-top: 30px;
-    gap: 20px;
 }
 
-#projects > h2{
+.container h2{
+    margin-top: 3rem;
     color: white;
 }
 
+.container .container__card{
+    display: flex;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    gap: 2rem;
+    margin-top: 3rem;
+    background-color: var(--primary-color);
+    max-width: 60%;
+}
 
-.container__project{
-    background-color: #333646;
-    border-radius: .5rem;
+.container__card img{
+    align-self: center;
+}
+
+.container__car__details{
+    color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 2rem 2rem;
-    width: 18rem;
-    height: 18rem;
+    text-align: justify;
+    gap: 1.8rem;
 }
 
-.container__project:hover{
-    background-color: #FFAF2A;
-}
-
-.container__project p{
-    text-align: center;
-    color: white;   
+.container__car__details h3{
+    color: rgb(230, 198, 16);
 }
 
 
+.container__car__details .tags_technologies label{
+    background-color: var(--secundary-color);
+    padding: .5rem .5rem;
+    border-radius: .5rem;
+}
 
+.container__car__details .project__buttons a{
+    padding: 1rem 1rem;
+    border: 1px solid white;
+    border-radius: .5rem;
+}
+
+.project__buttons a:hover{
+    background-color: rgb(230, 198, 16);
+}
