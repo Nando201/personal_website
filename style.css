@@ -25,8 +25,8 @@ html{
     scroll-behavior: smooth;
 }
 
-h1{ font-size: 3.6rem; }
-h2{ font-size: 2.4rem; }
+h1{ font-size: 6.2rem; }
+h2{ font-size: 2.8rem; }
 h3{ font-size: 2rem; }
 p, a{ font-size: 1.6rem; font-weight: 200; color: white;}
 li{list-style: none;}
@@ -36,16 +36,23 @@ a{text-decoration: none; color: white;}
 header{
     font-weight: bold;
     width: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--secundary-color);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 30px;
+    padding: 1.5rem 2rem;
     position: fixed;
 }
 
+header .nav-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 .logo{
-    color: white;
+    color: rgb(192, 192, 192);
     font-size: 2.4rem;
 }
 
@@ -56,7 +63,7 @@ header{
 }
 
 .navbar__list a{
-    color: white;
+    color: rgb(192, 192, 192);
 }
 
 .navbar__list a:hover{
@@ -79,60 +86,67 @@ header{
 #home{
     height: 90vh;
     padding: 1rem 2rem;
-    background-color: var(--primary-color);
+    background-color: var(--secundary-color);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 
 .container__home{
+    width: 90%;
     display: flex;
-    justify-content: center;
-    max-width: 60%;
+    justify-content: space-between;
 }
 
 .container__home .wrapper{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 10px;
     text-align: justify;
-    padding: 1rem 2rem;
+    max-width: 650px;
 }
 
 .wrapper h1{
     color: rgb(230, 198, 16);
+    margin-bottom: 3rem;
+}
+
+.container__home img{
+    margin-right: 5rem; 
 }
 
 #projects{
     background-color: var(--secundary-color);
-    height: 90vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 1rem 2rem;
 }
 
 
 #projects .container{
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 1rem 1rem;
 }
 
 .container h2{
-    margin-top: 3rem;
+    margin-top: 5rem;
     color: white;
 }
 
 .container .container__card{
     display: flex;
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
     border-radius: 1rem;
-    gap: 2rem;
+    column-gap: 2rem;
     margin-top: 3rem;
+    margin-left: 2rem;
     background-color: var(--primary-color);
-    max-width: 60%;
+    max-width: 80%;
 }
 
 .container__card img{
@@ -144,7 +158,7 @@ header{
     display: flex;
     flex-direction: column;
     text-align: justify;
-    gap: 1.8rem;
+    gap: 1.5rem;
 }
 
 .container__car__details h3{
@@ -159,11 +173,44 @@ header{
 }
 
 .container__car__details .project__buttons a{
-    padding: 1rem 1rem;
+    padding: .5rem .5rem;
     border: 1px solid white;
     border-radius: .5rem;
 }
 
 .project__buttons a:hover{
     background-color: rgb(230, 198, 16);
+}
+
+#skills{
+    background-color: var(--secundary-color);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+
+#skills .center
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.center h2{
+    color: white;
+    margin-top: 5rem;;
+}
+
+.center .skills-container{
+    display: flex;
+    padding: 1rem 2rem;
+    gap: 1.5rem;
+    margin-top: 5rem;
+    flex-flow: row wrap;
+}
+
+.skills-container a{
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    background-color: var(--primary-color);
 }
