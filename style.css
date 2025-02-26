@@ -88,13 +88,13 @@ header .nav-container{
     padding: 1rem 2rem;
     background-color: var(--secundary-color);
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 
 .container__home{
     width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
