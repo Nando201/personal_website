@@ -1,6 +1,6 @@
 :root{
     --primary-color: #333646;
-    --secundary-color: #252734;
+    --secondary-color: #252734;
 }
 
 /* jetbrains-mono-latin-wght-normal */
@@ -38,25 +38,26 @@ li{list-style: none;}
 a{text-decoration: none;}
 p{line-height: 1.6;}
 
-header{
+.header{
     font-weight: bold;
     width: 100%;
-    background-color: var(--secundary-color);
+    background-color: var(--secondary-color);
     display: flex;
     padding: 1.5rem 2rem;
     position: fixed;
 }
 
-header .nav-container{
+.header__container{
     width: 90%;
     margin: 0 auto;
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
 }
 
 
-.logo{
+.header__logo{
     color: rgb(192, 192, 192);
     font-size: 2.4rem;
 }
@@ -74,6 +75,7 @@ header .nav-container{
 .navbar__list a:hover{
     color: bisque;
     border-radius: 10px;
+    transition: color 0.3s ease-in-out;
 }
 
 .navbar__list .first_item{
@@ -91,20 +93,20 @@ header .nav-container{
 #home{
     height: 90vh;
     padding: 1rem 2rem;
-    background-color: var(--secundary-color);
+    background-color: var(--secondary-color);
     display: flex;
     align-items: center;
 }
 
 
-.container__home{
+.home__container{
     width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
-.container__home .wrapper{
+.home__content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -113,24 +115,24 @@ header .nav-container{
     max-width: 650px;
 }
 
-.wrapper h1{
+.home__content h1{
     color: rgb(230, 198, 16);
     margin-bottom: 3rem;
 }
 
-.container__home img{
+.home__image{
     margin-right: 5rem; 
 }
 
 #projects{
-    background-color: var(--secundary-color);
+    background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     padding: 1rem 2rem;
 }
 
 
-#projects .container{
+.projects__container{
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -138,12 +140,12 @@ header .nav-container{
     padding: 1rem 1rem;
 }
 
-.container h2{
-    margin-top: 5rem;
+.projects__container h2{
+    margin-top: 10rem;
     color: rgb(230, 198, 16);
 }
 
-.container .container__card{
+.projects__card{
     display: flex;
     padding: 2rem 2rem;
     border-radius: 1rem;
@@ -154,11 +156,11 @@ header .nav-container{
     max-width: 80%;
 }
 
-.container__card img{
+.projects__card img{
     align-self: center;
 }
 
-.container__car__details{
+.projects__card-details{
     color: white;
     display: flex;
     flex-direction: column;
@@ -166,47 +168,47 @@ header .nav-container{
     gap: 1.5rem;
 }
 
-.container__car__details h3{
+.projects__card-details h3{
     color: rgb(230, 198, 16);
 }
 
 
-.container__car__details .tags_technologies label{
-    background-color: var(--secundary-color);
+.proyects__card-techs span{
+    background-color: var(--secondary-color);
     padding: .5rem .5rem;
     border-radius: .5rem;
 }
 
-.container__car__details .project__buttons a{
+.projects__card-buttons a{
     padding: .5rem .5rem;
     border: 1px solid white;
     border-radius: .5rem;
 }
 
-.project__buttons a:hover{
+.projects__card-buttons a:hover{
     background-color: rgb(230, 198, 16);
 }
 
 #skills{
-    background-color: var(--secundary-color);
+    background-color: var(--secondary-color);
     height: 90vh;
     display: flex;
     flex-direction: column;
     padding: 1rem 2rem;
 }
 
-#skills .center
+.skills__container
 {
     width: 90%;
     margin: 0 auto;
 }
 
-.center h2{
+.skills__container h2{
     color: rgb(230, 198, 16);
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 
-.center .skills-container{
+.skills__list{
     display: flex;
     padding: 1rem 2rem;
     gap: 1.5rem;
@@ -214,30 +216,31 @@ header .nav-container{
     flex-flow: row wrap;
 }
 
-.skills-container li{
+.skills__list li{
     color: white;
-    padding: 1rem 1rem;
+    padding: 1rem;
     border-radius: 2rem;
     background-color: var(--primary-color);
 }
 
 #timeline{
     height: 90vh;
-    background-color: var(--secundary-color);
+    background-color: var(--secondary-color);
     padding: 1rem 2rem;
 }
 
-.timeline-container{
+.timeline__container{
     width: 90%;
     margin: 0 auto;
 }
 
-.timeline-container h2{
+.timeline__container h2{
     color: rgb(230, 198, 16);
+    margin-top: 10rem;
 }
 
 
-.container-timelineitems{
+.timeline__items{
     display: flex;
     flex-flow: row wrap;
     gap: 1rem;
@@ -246,7 +249,7 @@ header .nav-container{
     justify-content: space-between;
 }
 
-.container-timelineitems > div{
+.timeline__items > div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -271,7 +274,7 @@ header .nav-container{
 }
 
 
-.timeline-container hr{
+.timeline__container hr{
     position: relative;
     top: 21rem;
 }
