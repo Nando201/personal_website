@@ -25,13 +25,18 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    font-size: 1.6rem;
+}
+
+
 h1{ font-size: 6.2rem; }
 h2{ font-size: 2.8rem; }
 h3{ font-size: 2rem; }
 p, a{ font-size: 1.6rem; font-weight: 200; color: white;}
 li{list-style: none;}
-a{text-decoration: none; color: white;}
-
+a{text-decoration: none;}
+p{line-height: 1.6;}
 
 header{
     font-weight: bold;
@@ -135,7 +140,7 @@ header .nav-container{
 
 .container h2{
     margin-top: 5rem;
-    color: white;
+    color: rgb(230, 198, 16);
 }
 
 .container .container__card{
@@ -197,8 +202,8 @@ header .nav-container{
 }
 
 .center h2{
-    color: white;
-    margin-top: 5rem;;
+    color: rgb(230, 198, 16);
+    margin-top: 5rem;
 }
 
 .center .skills-container{
@@ -209,8 +214,66 @@ header .nav-container{
     flex-flow: row wrap;
 }
 
-.skills-container a{
+.skills-container li{
+    color: white;
     padding: 1rem 1rem;
     border-radius: 2rem;
     background-color: var(--primary-color);
 }
+
+#timeline{
+    height: 90vh;
+    background-color: var(--secundary-color);
+    padding: 1rem 2rem;
+}
+
+.timeline-container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.timeline-container h2{
+    color: rgb(230, 198, 16);
+}
+
+
+.container-timelineitems{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    position: relative;
+    top: 20rem;
+    justify-content: space-between;
+}
+
+.container-timelineitems > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.timeline-item{
+    background-color: #f4f4f4;
+    border-radius: .5rem;
+    width: 30rem;
+    min-width: 15rem;
+    padding: 1rem .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.timeline-item p{
+    color: black;
+    text-align: center;
+}
+
+
+.timeline-container hr{
+    position: relative;
+    top: 21rem;
+}
+
+
