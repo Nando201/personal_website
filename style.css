@@ -103,6 +103,7 @@ p{line-height: 1.6;}
     width: 90%;
     margin: 0 auto;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
 }
 
@@ -122,9 +123,12 @@ p{line-height: 1.6;}
 
 .home__image{
     margin-right: 5rem; 
+    display: none;
 }
 
 #projects{
+    padding-top: 8rem;
+    min-height: 90vh;
     background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
@@ -141,12 +145,12 @@ p{line-height: 1.6;}
 }
 
 .projects__container h2{
-    margin-top: 10rem;
     color: rgb(230, 198, 16);
 }
 
 .projects__card{
     display: flex;
+    flex-direction: row;
     padding: 2rem 2rem;
     border-radius: 1rem;
     column-gap: 2rem;
@@ -195,6 +199,7 @@ p{line-height: 1.6;}
     display: flex;
     flex-direction: column;
     padding: 1rem 2rem;
+    padding-top: 8rem;
 }
 
 .skills__container
@@ -205,7 +210,6 @@ p{line-height: 1.6;}
 
 .skills__container h2{
     color: rgb(230, 198, 16);
-    margin-top: 10rem;
 }
 
 .skills__list{
@@ -236,7 +240,6 @@ p{line-height: 1.6;}
 
 .timeline__container h2{
     color: rgb(230, 198, 16);
-    margin-top: 10rem;
 }
 
 
@@ -268,6 +271,10 @@ p{line-height: 1.6;}
     gap: 1rem;
 }
 
+.timeline-item h3{
+    text-align: center;
+}
+
 .timeline-item p{
     color: black;
     text-align: center;
@@ -280,3 +287,36 @@ p{line-height: 1.6;}
 }
 
 
+@media (max-width: 800px){
+    .home__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .home__content h1, p{
+        text-align: center;
+    }
+    .home__content h1{
+        margin-top: 10rem;
+    }
+    .projects__container{
+        align-items: center;
+    }
+    .projects__card{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+    }
+    .projects__card-details h3{
+        text-align: center;
+    }
+    .proyects__card-techs{
+        text-align: center;
+    }
+    .projects__card-buttons{
+        text-align: center;
+    }
+    .timeline-item{
+        width: 15rem;
+        height: 15rem;
+    }
+}
