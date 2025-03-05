@@ -6,6 +6,8 @@
     <meta name="description" content="Fernando Chanduvi es un desarrollador de software JR">
     <meta name="robots" content="index,follow"/>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px)"  href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 430px)" href="mobile.css">
     <title>Personal web</title>
 </head>
 <body>
@@ -29,9 +31,11 @@
                     <p >Soy un ingeniero de software con 5 años de experiencia en el desarrollo de sitios web multiplataforma
                     </p>
                 </div>
-                <figure class="home__container-container">
-                    <img class="home__image" src="./assets/foto_perfil.jpg" width="500px" alt="">
-                </figure>
+                <picture class="home__container-container">
+                    <source media="(max-width: 430px)" srcset="./assets/foto_small.png">
+                    <source media="(max-width: 800px)" srcset="./assets/foto_medium.png">
+                    <img class="home__image" src="./assets/foto_large.png" alt="">
+                </picture>
             </div>
         </section>
         <section id="projects">
