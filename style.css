@@ -35,7 +35,7 @@ body{
 h1{ font-size: 6.2rem; }
 h2{ font-size: 2.8rem; }
 h3{ font-size: 2rem; }
-p, a{ font-size: 1.6rem; font-weight: 200; color: white;}
+p, a{ font-size: 1.4rem; font-weight: 200; color: white;}
 li{list-style: none;}
 a{text-decoration: none;}
 p{line-height: 1.6;}
@@ -44,7 +44,7 @@ p{line-height: 1.6;}
     font-weight: bold;
     width: 100%;
     display: flex;
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
     position: sticky;
     top: 0;
     min-height: 6rem;
@@ -69,7 +69,8 @@ p{line-height: 1.6;}
 }
 
 .navbar__list a{
-    color: rgb(192, 192, 192);
+    color: rgb(255, 250, 250);
+    font-weight: 400;
 }
 
 .navbar__list a:hover{
@@ -87,7 +88,7 @@ p{line-height: 1.6;}
 
 .home__container{
     min-height: 60vh;
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -100,7 +101,7 @@ p{line-height: 1.6;}
     justify-content: center;
     gap: 10px;
     text-align: justify;
-    max-width: 650px;
+    width: 60%;
 }
 
 .home__content h1{
@@ -114,7 +115,7 @@ p{line-height: 1.6;}
 }
 
 #projects{
-    min-height: 80vh;
+    min-height: 85vh;
     display: flex;
     flex-direction: column;
     padding: 1rem 2rem;
@@ -123,7 +124,7 @@ p{line-height: 1.6;}
 
 
 .projects__container{
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -135,22 +136,24 @@ p{line-height: 1.6;}
 }
 
 .projects__card{
+    width: 100%;
     display: flex;
     flex-direction: row;
+    height: 300px;
     padding: 2rem 2rem;
     border-radius: 1rem;
     column-gap: 2rem;
     margin-top: 3rem;
-    margin-left: 2rem;
     background-color: var(--primary-color);
-    max-width: 90%;
 }
 
 .projects__card img{
-    align-self: center;
+    width: 40%;
+    height: 100%;
 }
 
 .projects__card-details{
+    height: 100%;
     color: white;
     display: flex;
     flex-direction: column;
@@ -179,99 +182,24 @@ p{line-height: 1.6;}
     background-color: rgb(230, 198, 16);
 }
 
-#skills{
-    min-height: 50vh;
+#aboutme{
+    min-height: 70vh;
     padding: 1rem 2rem;
     scroll-margin-top: 5rem;
 }
 
-.skills__container
+.aboutme__container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.aboutme__container h2
 {
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    color:  rgb(230, 198, 16);
 }
 
-.skills__container h2{
-    color: rgb(230, 198, 16);
-}
-
-.skills__list{
-    display: flex;
-    padding: 1rem 2rem;
-    gap: 1.5rem;
-    margin-top: 5rem;
-    flex-flow: row wrap;
-}
-
-.skills__list li{
-    color: white;
-    padding: 1rem;
-    border-radius: 2rem;
-    background-color: var(--primary-color);
-}
-
-#timeline{
-    min-height: 60vh;
-    padding: 1rem 2rem;
-    scroll-margin-top: 5rem;
-}
-
-.timeline__container{
-    width: 60%;
-    margin: 0 auto;
-}
-
-.timeline__container h2{
-    color: rgb(230, 198, 16);
-}
-
-
-.timeline__items{
-    margin-top: 3rem;
-    display: flex;
-    position: relative;
-    top: 8rem;
-    justify-content: space-between;
-}
-
-.timeline__items > div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.timeline-item{
-    background-color: #f4f4f4;
-    border-radius: .5rem;
-    min-width: 20rem;
-    min-height: 10rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.timeline-item h3{
-    text-align: center;
-}
-
-.timeline-item p{
-    color: black;
-    text-align: center;
-}
-
-
-.timeline__container hr{
-    position: relative;
-    top: 10rem;
-}
 
 .footer{
-    width: 100%;
     height: 6rem;
 }
 
@@ -279,6 +207,11 @@ p{line-height: 1.6;}
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    width: 90%;
+    width: 60%;
+}
+
+.footer__container p,a{
+    color: rgb(192, 192, 192);
+
 }
 

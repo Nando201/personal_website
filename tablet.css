@@ -26,14 +26,4 @@
     .projects__card-buttons{
         text-align: center;
     }
-    .timeline-item{
-        width: 15rem;
-        height: 15rem;
-    }
-    .skills__container{
-        align-items: center;
-        
-    }
-    .skills__list{
-        justify-content: center;
-    }    
+       

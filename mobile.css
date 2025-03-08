@@ -10,14 +10,3 @@
 .projects__card img {
   width: 100%;
 }
-.timeline__container hr {
-  display: none;
-}
-.timeline__items {
-  display: flex;
-  flex-direction: column;
-  position: static;
-}
-.timeline__container h2 {
-  text-align: center;
-}
