@@ -1,29 +1,24 @@
-    .home__container{
-        flex-direction: column;
-        align-items: center;
-    }
-    .home__container picture{
-        margin-right: 0rem;
-        padding: 2rem;
-    }
-    .home__content h1, p{
-        text-align: center;
-    }
-    .projects__container{
-        align-items: center;
-    }
-    .projects__card{
-        flex-direction: column;
-        align-items: center;
-        row-gap: 2rem;
-    }
-    .projects__card-details h3{
-        text-align: center;
-    }
-    .projects__card-techs{
-        text-align: center;
-    }
-    .projects__card-buttons{
-        text-align: center;
-    }
-       
+.home__container{
+    width: 90%;
+}
+
+.projects__container{
+    width: 90%;
+}
+
+.projects__card{
+
+    margin-top: 5rem;
+}
+
+.projects__card img{
+    height: 60%;
+}
+
+.aboutme__container{
+    width: 90%;
+}
+
+.footer__container {
+    width: 90%;
+}

@@ -1,12 +1,39 @@
-.header__container {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.home__container{
+  width: 100%;
   justify-content: center;
-  gap: 0.5rem;
 }
-.home__content h1 {
-  font-size: 15vw;
+
+.home__content{
+  width: 80%;
 }
-.projects__card img {
+
+.home__content h1, p{
+  text-align: center;
+}
+
+
+.home__buttons-container{
+  justify-content: center;
+}
+
+
+.home__image{
+  display: none;
+}
+
+
+.projects__container{
+  width: 100%;
+}
+
+.projects__card img{
+  height: 60%;
+}
+
+.aboutme__container{
+  width: 100%;
+}
+
+.footer__container {
   width: 100%;
 }
