@@ -30,7 +30,7 @@ li{list-style: none;}
 a{text-decoration: none;}
 p{line-height: 1.6;}
 
-.header{
+header{
     min-width: 320px;
     font-weight: bold;
     width: 100%;
@@ -38,24 +38,20 @@ p{line-height: 1.6;}
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
-    min-height: 6rem;
+    min-height: 60px;
 }
 
 
 .header__container{
     margin: 0 auto;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
     padding: 1rem 3rem;
-    align-items: center;
     border-radius: 3rem;
     background: rgba(58, 61, 80, 1);
 }
 
 .navbar__list{
     display: flex;
-    flex-flow: row wrap;
     column-gap: 10px;
 }
 
@@ -69,20 +65,24 @@ p{line-height: 1.6;}
     transition: color 0.3s ease-in-out;
 }
 
+main{
+    width: 100%;
+    height: auto;
+}
+
 #home{
     width: 100%;
     min-width: 320px;
-    padding: 1rem 1.5rem;
-    display: flex;
-    align-items: center;
+    padding: 3rem 1.5rem;
     scroll-margin-top: 6rem;
     min-height: 60vh;
 }
 
 
 .home__container{
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,7 +92,7 @@ p{line-height: 1.6;}
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     text-align: justify;
     width: 60%;
 }
@@ -133,6 +133,11 @@ p{line-height: 1.6;}
     font-weight: 500;
 }
 
+.home__container picture{
+    margin-left: 10px;
+    width: 40%;
+}
+
 .home__image{
     width: 100%;
 }
@@ -147,7 +152,7 @@ p{line-height: 1.6;}
 
 
 .projects__container{
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -225,9 +230,8 @@ p{line-height: 1.6;}
 }
 
 .aboutme__container{
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
-   
 }
 
 .aboutme__container h2
@@ -245,6 +249,7 @@ p{line-height: 1.6;}
 }
 
 .footer{
+    width: 100%;
     font-size: 1.4rem;
     padding: 1rem 1.5rem;
     min-height: 6rem;

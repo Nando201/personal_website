@@ -26,7 +26,7 @@
 }
 
 
-.home__image{
+picture{
   display: none;
 }
 
@@ -59,8 +59,16 @@
   width: 100%;
 }
 
+.aboutme__container p {
+  margin-left: 0px;
+  margin-right: 0px;
+
+}
+
 .footer__container{
   width: 100%;
   flex-direction: column;
   text-align: justify;
+  gap: 10px;
 }
+
