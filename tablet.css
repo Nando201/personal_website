@@ -1,5 +1,31 @@
+#home{
+    height: 100vh;
+}
+
 .home__container{
     width: 90%;
+    flex-direction: column;
+    position: static;
+    justify-content: flex-start;
+}
+
+.home__content{
+    width: 100%;
+    padding: 0px;
+    height: 50%;
+    text-align: center;
+}
+
+.home__image-container{
+    position: static;
+    margin-bottom: 20px;
+    width: 50%;
+    height: 40%;
+    order: -1;
+}
+
+.home__buttons-container{
+    justify-content: center;
 }
 
 .projects__container{
