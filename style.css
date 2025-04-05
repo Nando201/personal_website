@@ -39,7 +39,7 @@ p{line-height: 1.6;}
     position: sticky;
     top: 0;
     min-height: 6rem;
-    z-index: 1;
+    z-index: 10;
 }
 
 
@@ -95,7 +95,6 @@ p{line-height: 1.6;}
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 40px;
     text-align: justify;
     width: 50%;
 }
@@ -152,8 +151,7 @@ p{line-height: 1.6;}
 .home__image-container{
     position: absolute;
     right: 0;
-    top: -50px;
-    width: 50%;
+    width: 40%;
     height: 100%;
     background-image: 
     linear-gradient(to bottom, 
@@ -161,8 +159,8 @@ p{line-height: 1.6;}
       rgba(29, 31, 44, 0) 70%,
       rgba(29, 31, 44, 0.5) 85%,
       rgba(29, 31, 44, 1) 100%),
-    url('./assets/foto-removebg.png');
-    background-size: cover;
+    url('./assets/foto-final.PNG');
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -172,7 +170,7 @@ p{line-height: 1.6;}
     min-width: 320px;
     display: flex;
     flex-direction: column;
-    padding: 1rem 1.5rem;
+    padding: 10px 15px;
     scroll-margin-top: 5rem;
 }
 
@@ -182,7 +180,6 @@ p{line-height: 1.6;}
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding: 1rem 1rem;
 }
 
 .projects__container h2{
@@ -194,8 +191,6 @@ p{line-height: 1.6;}
     display: flex;
     flex-direction: row;
     min-height: 288px;
-    padding: 2rem 2rem;
-    padding-left: 0;
     border-radius: 1rem;
     column-gap: 15px;
     margin-top: 4rem;
@@ -203,7 +198,8 @@ p{line-height: 1.6;}
 
 .projects__card .projects__image-container{
     max-width: 100%;
-    min-width: 40%;
+    min-width: 260px;
+    min-height: 270px;
     background-image: url('./assets/project.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -263,17 +259,17 @@ p{line-height: 1.6;}
 .aboutme__container{
     width: 50%;
     margin: 0 auto;
-   
 }
 
 .aboutme__container h2
 {
+    margin-top: 30px;
     color:  rgb(230, 198, 16);
 }
 
 .aboutme__container p{
     line-height: 1.8;
-    margin: 10px;
+    margin-top: 15px;
     text-align: justify;
 }
 .aboutme__container .first{

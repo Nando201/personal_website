@@ -5,12 +5,19 @@
 
 .home__container{
   width: 100%;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
+
 .home__content{
-  width: 80%;
+  width: 90%;
 }
+
+.home__image-container{
+  margin-bottom: 0;
+  height: 35%;
+}
+
 
 .home__content > h1{
   text-align: center;
@@ -25,16 +32,13 @@
   justify-content: center;
 }
 
-#projects{
-  padding-left: 0;
-  padding-right: 0;
-}
 
 .projects__container{
   width: 100%;
 }
 
 .projects__card{
+  width: 100%;
   padding: 1.5rem 0;
   margin-top: 20px;
   height: auto;
@@ -42,11 +46,17 @@
 }
 
 .projects__card-details{
+  width: 100%;
   text-align: justify;
 }
 
-.projects__card img{
+.projects__card .projects__image-container{
   width: 100%;
+  margin-bottom: 10px;
+}
+
+.projects__card-buttons{
+  justify-content: center;
 }
 
 
