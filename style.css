@@ -198,17 +198,20 @@ p{line-height: 1.6;}
 
 .projects__card .projects__image-container{
     width: 450px;
+    max-height: 300px;
+    min-height: 200px;
     border-radius: 15px;
-    overflow: hidden;
-    height: auto;
+    overflow: hidden; 
+    aspect-ratio: 3/2;
     box-shadow: 0 4px 12px rgba(244, 239, 239, 0.3); /* Añade una sombra sutil */
-    background-color: #1a1f2a; /* Fondo oscuro para imágenes con transparencia */
+    /*background-color: #1a1f2a; /* Fondo oscuro para imágenes con transparencia */
 }
 
 .projects__image-container img{
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
+    object-fit: fill;
 }
 
 
